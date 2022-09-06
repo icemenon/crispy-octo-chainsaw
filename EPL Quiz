@@ -1,0 +1,39 @@
+print("Lets play the EPL quiz. Are you ready? ")
+playing = input("Are you ready to play? ")
+if playing.lower() != "yes":
+        quit()
+
+print("Ok, lets play :) ")
+score = 0
+
+answer = input("Who does Erling Haaland play for? ")
+if answer.lower() == "manchester city":
+        print("Correct!")
+        score += 1
+else:
+        print("Bleep! Wrong!!")
+        score += 1
+
+answer = input("Who is the premier league all time top scorer? ")
+if answer.lower() == "alan shearer":
+        print("Correct!")
+        score += 1
+else:
+        print("Bleep! Wrong!!")
+
+answer = input("Who scored the last minute winner to give ManCity their 1st EPL title? ")
+if answer.lower() == "sergio aguero":
+        print("Correct!")
+        score += 1
+else:
+        print("Bleep! Wrong!!")
+
+answer = input("Who is Arsenal's all time top scorer? ")
+if answer.lower() == "thierry henry":
+        print("Correct!")
+        score += 1
+else:
+        print("Bleep! Wrong!!")
+
+print("you got " + str(score) +  " questions_correct!")
+print("you got " + str(score/4*100) +  " %. ")
